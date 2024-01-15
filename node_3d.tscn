@@ -40,8 +40,12 @@ shader = ExtResource("3_bsnde")
 script = ExtResource("1_207ab")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
-visible = false
+shadow_enabled = true
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.594556, 0.804054, 0, -0.804054, 0.594556, 0, 0, 0)
+light_color = Color(0, 1, 0, 1)
+light_energy = 0.01
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
